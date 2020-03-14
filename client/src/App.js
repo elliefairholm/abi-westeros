@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 
 import Header from './Components/Presentational/Header/';
+import CharacterList from './Components/Container/CharacterList';
 
 // import api service
 
@@ -15,9 +16,7 @@ function App () {
   return (
     <div className="App">
       <Header></Header>
-      {/* header */}
-
-      {/* people list */}
+      <CharacterList></CharacterList>
     </div>
   );
 }

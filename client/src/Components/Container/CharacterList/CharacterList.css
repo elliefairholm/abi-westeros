@@ -1,0 +1,7 @@
+.header-container {
+  background-image: url('../../../assets/header-image.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33vh;
+}
