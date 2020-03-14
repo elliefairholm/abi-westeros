@@ -1,6 +1,6 @@
 import React from 'react';
 import './CharacterList.css';
-import CharacterTile from '../../Presentational/CharacterTile';
+import CharacterTile from '../CharacterTile';
 
 function CharacterList ({ characterList }) {
 

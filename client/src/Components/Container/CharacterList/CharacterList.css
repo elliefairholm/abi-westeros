@@ -1,7 +1,5 @@
-.header-container {
-  background-image: url('../../../assets/header-image.png');
+.character-list-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 33vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

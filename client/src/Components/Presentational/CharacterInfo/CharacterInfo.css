@@ -1,0 +1,17 @@
+.character-info-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.character-info-container > * {
+  margin: 2.5px 10px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.invite-link {
+  width: 120px;
+  margin: 10px;
+}

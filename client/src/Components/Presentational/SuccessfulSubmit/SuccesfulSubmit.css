@@ -1,0 +1,7 @@
+.successful-submit-container {
+  display: flex;
+  width: 80%;
+  margin-left: 10px;
+  height: 100%;
+  align-items: center;
+}
