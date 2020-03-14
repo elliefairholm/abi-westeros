@@ -2,20 +2,20 @@ import React from 'react';
 import './CharacterList.css';
 import CharacterTile from '../../Presentational/CharacterTile';
 
-// import api service
+function CharacterList ({ characterList }) {
 
-function CharacterList () {
+  if (characterList.length > 0) {
+    return (
+      <div className="character-list-container">
+        {characterList.map((character, index) => {
+          return <CharacterTile character={character} key={index}></CharacterTile>
+        })}
+      </div>
+    );
+  } else {
+    return null
+  }
 
-  // state for the people
-
-  // use effect that gets all the people
-
-  return (
-    <div className="character-list-container">
-      THIS IS MY CHARACTER LIST
-      <CharacterTile></CharacterTile>
-    </div>
-  );
 }
 
 export default CharacterList;

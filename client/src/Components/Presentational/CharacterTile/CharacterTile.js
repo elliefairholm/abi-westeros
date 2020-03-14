@@ -1,6 +1,5 @@
 import React from 'react';
 import './CharacterTile.css';
-import whatHouseTitle from '../../../assets/what-house-title.png'
 
 // import api service
 
