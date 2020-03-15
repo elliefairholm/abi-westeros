@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import './CharacterTile.css';
 import CharacterInfo from '../../Presentational/CharacterInfo/'
 import SuccessfulSubmit from '../../Presentational/SuccessfulSubmit/'
-
-function imageSource (name) {
-  return require(`../../../assets/${name}.png`);
-}
+import imageSource from '../../../Utils/'
 
 function CharacterTile ({ character }) {
 

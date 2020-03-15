@@ -1,9 +1,6 @@
 import React from 'react';
 import './CharacterInfo.css';
-
-function imageSource (name) {
-  return require(`../../../assets/${name}.png`);
-}
+import imageSource from '../../../Utils/'
 
 function CharacterTile ({ character, handleClick }) {
 
