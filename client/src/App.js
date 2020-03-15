@@ -17,11 +17,6 @@ function App () {
       })
   }, [])
 
-  console.log(characterList)
-  // state for the people
-
-  // use effect that gets all the people
-
   return (
     <div className="App">
       <Header></Header>
