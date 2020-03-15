@@ -10,7 +10,13 @@ const getCharacterList = async (req, res) => {
     await Promise.all(exampleCharacters.map(async (character) => {
       return await fetch(`${BASE_URL}${character}`)
         .then(res => res.json())
-        .then(res => response.push(res[0]))
+        .then(res => {
+          if (character === 'Daenerys Targaryen') {
+            response.push(res[1])
+          } else {
+            response.push(res[0])
+          }
+        })
         .catch((err) => {
           console.error(err);
         });
