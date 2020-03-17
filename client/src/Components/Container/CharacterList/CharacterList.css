@@ -1,3 +1,10 @@
+.character-list-message-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
+  height: 67vh;
+}
+
 .character-list-container {
   display: flex;
   flex-wrap: wrap;

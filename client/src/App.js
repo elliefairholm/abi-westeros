@@ -14,7 +14,7 @@ function App () {
     ApiClient.getCharacterList()
       .then(characterList => {
         setCharacterList(characterList);
-      })
+      });
   }, [])
 
   return (

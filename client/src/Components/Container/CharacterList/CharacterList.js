@@ -4,7 +4,19 @@ import CharacterTile from '../CharacterTile';
 
 function CharacterList ({ characterList }) {
 
-  if (characterList.length > 0) {
+  if (characterList === 'Unable to fetch API data.') {
+    return (
+      <div className="character-list-message-container">
+        <p>Could not fetch API data.</p>
+      </div>
+    )
+  } else if (!characterList) {
+    return (
+      <div className="character-list-message-container">
+        <p>Loading character list...</p>
+      </div>
+    )
+  } else {
     return (
       <div className="character-list-container">
         {characterList.map((character, index) => {
@@ -12,8 +24,6 @@ function CharacterList ({ characterList }) {
         })}
       </div>
     );
-  } else {
-    return null
   }
 
 }
