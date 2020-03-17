@@ -1,6 +1,6 @@
 import React from 'react';
 import './CharacterInfo.css';
-import imageSource from '../../../Utils/'
+import imageSource from '../../../utils'
 
 function CharacterTile ({ character, handleClick }) {
 

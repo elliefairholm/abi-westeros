@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import './App.css';
 
-import Header from './Components/Presentational/Header/';
-import CharacterList from './Components/Container/CharacterList';
+import Header from './components/presentational/Header';
+import CharacterList from './components/container/CharacterList';
 
-import ApiClient from './Services/';
+import ApiClient from './services';
 
 function App () {
   const [characterList, setCharacterList] = useState([]);

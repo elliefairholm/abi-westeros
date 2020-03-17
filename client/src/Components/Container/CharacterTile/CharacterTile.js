@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './CharacterTile.css';
-import CharacterInfo from '../../Presentational/CharacterInfo/'
-import SuccessfulSubmit from '../../Presentational/SuccessfulSubmit/'
-import imageSource from '../../../Utils/'
+import CharacterInfo from '../../presentational/CharacterInfo';
+import SuccessfulSubmit from '../../presentational/SuccessfulSubmit'   
+import imageSource from '../../../utils'
 
 function CharacterTile ({ character }) {
 
