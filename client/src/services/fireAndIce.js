@@ -1,4 +1,4 @@
-const BACK_END_URI = require('../config/');
+const { BACK_END_URI } = require('../config/');
 
 export default async () => {
   return await fetch(`${BACK_END_URI}/character-list`)

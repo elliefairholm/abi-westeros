@@ -5,7 +5,7 @@ function SuccesfulSubmit () {
 
   return (
     <div className="successful-submit-container">
-      <p class="bold">Congratulations your invitation has been sent.</p>
+      <p className="bold">Congratulations your invitation has been sent.</p>
     </div>
   );
 }
