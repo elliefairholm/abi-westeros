@@ -4,7 +4,10 @@ abi-westeros is a SPA that lets an ABI client invite their users to use the ABI 
 
 In this respository you will find both the front-end and the back-end. Although there is no database used, a server is needed in order to solve one an issue of CORS when using one of the external APIs.
 
-![abi-westeros example page](client/src/assets/abi-westeros-example.png)
+<p align="center">
+    <img src="client/src/assets/abi-westeros-example.png" alt="abi-westeros example"/>
+</p>
+
 
 
 ## Getting Started
