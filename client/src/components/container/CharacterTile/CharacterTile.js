@@ -13,7 +13,6 @@ function CharacterTile ({ character }) {
     ApiClient.inviteUser(character)
       .then(res => {
         if (res.user) {
-          console.log(res)
           setInvited(!invited);
         } else {
           window.alert(res);

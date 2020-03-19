@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import './App.css';
-
 import Header from './components/presentational/Header';
 import CharacterList from './components/container/CharacterList';
 

@@ -22,9 +22,7 @@ const inviteUser = async (req, res) => {
         console.error(err)
         res.status(403);
         res.send('An error occured when inviting the user.');
-      })
-    // res.status = response.status;
-    // res.send(response.json());
+      });
   } catch (err) {
     console.error(err)
   }
