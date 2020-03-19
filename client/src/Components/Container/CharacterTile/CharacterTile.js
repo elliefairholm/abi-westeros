@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
 import './CharacterTile.css';
 import CharacterInfo from '../../presentational/CharacterInfo';
-import SuccessfulSubmit from '../../presentational/SuccessfulSubmit'   
+import SuccessfulSubmit from '../../presentational/SuccessfulSubmit'
 import imageSource from '../../../utils'
+import ApiClient from '../../../services';
 
 function CharacterTile ({ character }) {
 
   const [invited, setInvited] = useState(false);
 
-  const handleClick = (e) => {
-    setInvited(!invited);
+  const handleClick = (character) => {
+    ApiClient.inviteUser(character)
+      .then(res => {
+        if (res.user) {
+          console.log(res)
+          setInvited(!invited);
+        } else {
+          window.alert(res);
+        }
+      });
   }
 
   const characterImageName = character.name.toLowerCase().replace(' ', '-');

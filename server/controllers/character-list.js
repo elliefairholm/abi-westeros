@@ -26,8 +26,6 @@ const getCharacterList = async (req, res) => {
   } catch (err) {
     console.error(err)
   }
-}
+};
 
-module.exports = {
-  getCharacterList
-}
+module.exports = getCharacterList;

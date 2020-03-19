@@ -10,7 +10,7 @@ function CharacterTile ({ character, handleClick }) {
       <p><span>Born: </span> {character.born}</p>
       <p><span>Title: </span> {character.titles[1] || character.titles[0]}</p>
       <p><span>Actor: </span> {character.playedBy[0]}</p>
-      <img className="invite-link" src={imageSource('invite-text')} alt="Invite to ABI Button" onClick={(e) => handleClick(e)} />
+      <img className="invite-link" src={imageSource('invite-text')} alt="Invite to ABI Button" onClick={() => handleClick(character)} />
     </div>
   );
 }
